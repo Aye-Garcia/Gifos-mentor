@@ -1,0 +1,152 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Global                                   */
+/* -------------------------------------------------------------------------- */
+@import "partials/variables", "partials/mixins";
+
+html {
+  box-sizing: border-box;
+  font-family: $primaryFont;
+}
+body {
+  padding: 0 75px;
+  background-color: $bgWhite;
+}
+
+button {
+  font-family: $primaryFont;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                        HEADER                              */
+/* -------------------------------------------------------------------------- */
+
+.top-bar {
+  @include text;
+  height: 24px;
+  color: $White;
+  background: $gradient;
+  letter-spacing: 0;
+  margin-bottom: 35px;
+  text-overflow: ellipsis;
+  box-shadow: $box-shadow;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+}
+
+.buttonDiv {
+  @include displayFlex;
+}
+span {
+  width: 77px;
+  font-size: 16px;
+  color: $White;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+span:hover {
+  border: 1px dotted $White;
+  cursor: pointer;
+  span:first-child {
+    text-decoration: underline;
+    border: 0px;
+  }
+}
+span:active {
+  opacity: 70%;
+}
+.navBar {
+  @include displayFlex;
+  margin-bottom: 19px;
+  padding: 10px 75px;
+  width: 100%;
+  z-index: 10;
+  .logo {
+    width: 102.6px;
+    cursor: pointer;
+  }
+  .button {
+    @include displayFlex;
+    position: relative;
+    background: #f7c9f3;
+    border: 1px solid #110038;
+    box-shadow: $btnBoxShadow;
+    height: 36px;
+    padding: 0 14px;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 18px;
+    cursor: pointer;
+  }
+  .dropdownBtn {
+    @include displayFlex;
+    align-items: center;
+    margin-right: 50px;
+    :first-child {
+      width: 131px;
+    }
+    #drop {
+      position: relative;
+      .dropdownImg {
+        width: 10px;
+        height: 6px;
+      }
+    }
+  }
+  #ulTheme {
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    align-items: center;
+    line-height: normal;
+    left: 127px;
+    top: 37px;
+    width: 170px;
+    background: #e6e6e6;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    li {
+      border: 1px solid #cca6c9;
+      box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+      width: 150px;
+      height: 36px;
+      margin-bottom: 10px;
+      text-align: left;
+      padding: 7px 0 7px 16px;
+    }
+    .firstLetter {
+      background: #fff4fd;
+      span {
+        text-decoration: underline;
+      }
+    }
+    li:active {
+      background: $bgWhite;
+      border: 1px solid #cca6c9;
+      box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+  .ulTheme-none {
+    display: none;
+  }
+  .ulTheme-block {
+    display: block;
+  }
+  #createBtn {
+    margin-right: 16px;
+  }
+}

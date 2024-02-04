@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gifos</title>
+    <meta name="description" content="Site to find gifs and edit them" />
+    <link rel="preload" href="Styles/styles.css" ass="style" />
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        ¡Bienvenidos/as a Gifos.com! ——————Donde los gifs están.////// Número de
+        visitas: 12.765.803
+      </div>
+      <section class="navBar">
+        <img src="./assets/gifOF_logo.png" alt="logo" class="logo" />
+        <div class="buttonDiv">
+          <button class="button" id="createBtn">Crear Gifos</button>
+          <div class="dropdownBtn">
+            <button class="button">Elegir Tema</button>
+            <button class="button" id="drop">
+              <img
+                src="assets/dropdown.svg"
+                class="dropdownImg"
+                alt="desplegable"
+              />
+            </button>
+          </div>
+          <span id="myGuifos"><span>M</span>is Gifos </span>
+          <ul id="ulTheme" class="ulTheme-none">
+            <li id="dayTheme"><span>S</span>ailor Day</li>
+            <li id="nightTheme"><span>S</span>ailor Night</li>
+          </ul>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>

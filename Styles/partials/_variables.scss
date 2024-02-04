@@ -1,0 +1,30 @@
+/*                                   Colors                                   */
+$bgWhite: #fff4fd;
+$gradient: linear-gradient(to left, #f7c9f3, #4180f6);
+$primary: #0000ff;
+$secondary: #0000a3;
+$White: #f2f3f4;
+$Black: #060a24;
+$buttonPrimaryColor: #00f0b8;
+$buttonSecondaryColor: #0000fe;
+$box-shadow: 0 1px 0 0 #110038;
+$btnBoxShadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+
+/*                                   Fonts                                   */
+$primaryFont: "Chakra Petch", sans-serif;
+
+/*                                   Sizes                                   */
+
+/*                                   Themes                                   */
+//ALLOWED: Dark, Light, Default
+$theme: Dark;
+$theme: Light;
+$theme: Default;
+
+@if $theme == Dark {
+  $text-color: $White;
+  $bg: $Black;
+} @else if $theme == Light {
+  $text-color: $Black;
+  $bg: $White;
+}

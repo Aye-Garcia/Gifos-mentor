@@ -1,0 +1,166 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Global                                   */
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/*                                   Fonts                                   */
+/*                                   Sizes                                   */
+/*                                   Themes                                   */
+html {
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+body {
+  padding: 0 75px;
+  background-color: #fff4fd;
+}
+
+button {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                        HEADER                              */
+/* -------------------------------------------------------------------------- */
+.top-bar {
+  font-size: 14px;
+  height: 24px;
+  color: #f2f3f4;
+  background: linear-gradient(to left, #f7c9f3, #4180f6);
+  letter-spacing: 0;
+  margin-bottom: 35px;
+  text-overflow: ellipsis;
+  box-shadow: 0 1px 0 0 #110038;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  width: 77px;
+  font-size: 16px;
+  color: #f2f3f4;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+span:hover {
+  border: 1px dotted #f2f3f4;
+  cursor: pointer;
+}
+span:hover span:first-child {
+  text-decoration: underline;
+  border: 0px;
+}
+
+span:active {
+  opacity: 70%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 19px;
+  padding: 10px 75px;
+  width: 100%;
+  z-index: 10;
+}
+.navBar .logo {
+  width: 102.6px;
+  cursor: pointer;
+}
+.navBar .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  height: 36px;
+  padding: 0 14px;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 18px;
+  cursor: pointer;
+}
+.navBar .dropdownBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  margin-right: 50px;
+}
+.navBar .dropdownBtn :first-child {
+  width: 131px;
+}
+.navBar .dropdownBtn #drop {
+  position: relative;
+}
+.navBar .dropdownBtn #drop .dropdownImg {
+  width: 10px;
+  height: 6px;
+}
+.navBar #ulTheme {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  align-items: center;
+  line-height: normal;
+  left: 127px;
+  top: 37px;
+  width: 170px;
+  background: #e6e6e6;
+  box-shadow: 0 1px 0 0 #110038;
+  cursor: pointer;
+}
+.navBar #ulTheme li {
+  border: 1px solid #cca6c9;
+  box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+  width: 150px;
+  height: 36px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 7px 0 7px 16px;
+}
+.navBar #ulTheme .firstLetter {
+  background: #fff4fd;
+}
+.navBar #ulTheme .firstLetter span {
+  text-decoration: underline;
+}
+.navBar #ulTheme li:active {
+  background: #fff4fd;
+  border: 1px solid #cca6c9;
+  box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+}
+.navBar #ulTheme :last-child {
+  margin-bottom: 0;
+}
+.navBar .ulTheme-none {
+  display: none;
+}
+.navBar .ulTheme-block {
+  display: block;
+}
+.navBar #createBtn {
+  margin-right: 16px;
+}/*# sourceMappingURL=styles.css.map */

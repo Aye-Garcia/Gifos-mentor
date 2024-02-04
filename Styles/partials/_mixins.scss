@@ -1,0 +1,25 @@
+@mixin phone-screen() {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet-screen() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin large-screen() {
+  @media (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin displayFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin text($size: 14px) {
+  font-size: $size;
+}
